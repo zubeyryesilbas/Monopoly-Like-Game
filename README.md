@@ -1,9 +1,9 @@
-#Joker Games Case Description - Mustafa Zübeyr Yesilbas .
+# Joker Games Case Description - Mustafa Zübeyr Yesilbas .
 
-#Introduction
+# Introduction
 I have developed this game using only assets found on the internet and the Unity Asset Store for the visuals. All the code, however, is entirely my creation. If you have any problems or questions, feel free to reach out to me.
 
-#2. Dice Animation Creation System
+# 2. Dice Animation Creation System
 Navigate to the Scene:
 Go to Assets/Scenes/DiceAnimationCreation.
 Rolling the Dice:
@@ -23,7 +23,7 @@ It may be a bit complicated, but this method ensures a unique solution for creat
 Feel free to reach out for assistance.
 
 
-#3.Game Design
+# 3.Game Design
 I have implemented a character selection system where each character's bonus affects the player's earnings. Additionally, I have an idea to give each character a luck attribute that manipulates the probabilities of random dice faces, but this feature has not been implemented yet.
 I have also created a "case" logic where players can attempt to multiply their earnings. However, if they fail, they risk losing everything. Players need to strategize on when to save their earnings.
 If I were in charge of developing this game further, I would suggest the following enhancements:
