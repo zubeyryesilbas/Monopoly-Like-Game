@@ -11,7 +11,8 @@ public class AnimationBasedFeedBack : Feedback
     public override void Play()
     {
         _animator.enabled = true;
-        StartCoroutine(DisableAnimCoroutine());
+        if(gameObject.activeSelf)
+            StartCoroutine(DisableAnimCoroutine());
     }
 
     private IEnumerator DisableAnimCoroutine()
