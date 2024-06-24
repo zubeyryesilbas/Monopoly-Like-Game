@@ -11,12 +11,16 @@ public class AnimationBasedFeedBack : Feedback
     public override void Play()
     {
         _animator.enabled = true;
-        DisableAnim();
+        StartCoroutine(DisableAnimCoroutine());
     }
 
-    private async void DisableAnim()
+    private IEnumerator DisableAnimCoroutine()
     {
-        await Task.Delay(2000);
+        while (_animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
+        {
+            yield return null;
+        }
+        
         _animator.enabled = false;
         gameObject.SetActive(false);
     }

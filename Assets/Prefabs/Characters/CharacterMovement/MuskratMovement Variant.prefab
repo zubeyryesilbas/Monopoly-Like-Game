@@ -5,6 +5,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 644027910916855787, guid: 8cb75dc2fdd63734988b8358f1314d25,
@@ -15,17 +16,17 @@ PrefabInstance:
     - target: {fileID: 644027910916855787, guid: 8cb75dc2fdd63734988b8358f1314d25,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 5
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 644027910916855787, guid: 8cb75dc2fdd63734988b8358f1314d25,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 5
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 644027910916855787, guid: 8cb75dc2fdd63734988b8358f1314d25,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 5
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 644027910916855787, guid: 8cb75dc2fdd63734988b8358f1314d25,
         type: 3}
@@ -85,7 +86,7 @@ PrefabInstance:
     - target: {fileID: 4950779065795438720, guid: 8cb75dc2fdd63734988b8358f1314d25,
         type: 3}
       propertyPath: m_Name
-      value: Muskrat Variant
+      value: MuskratMovement Variant
       objectReference: {fileID: 0}
     - target: {fileID: 9165535137218041895, guid: 8cb75dc2fdd63734988b8358f1314d25,
         type: 3}
@@ -94,6 +95,13 @@ PrefabInstance:
       objectReference: {fileID: 22100000, guid: 6e0049a115a26469eaef8cfe9f767734,
         type: 2}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4950779065795438720, guid: 8cb75dc2fdd63734988b8358f1314d25,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4039229653431014937}
   m_SourcePrefab: {fileID: 100100000, guid: 8cb75dc2fdd63734988b8358f1314d25, type: 3}
 --- !u!1 &4950258624356096078 stripped
 GameObject:

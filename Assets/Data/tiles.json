@@ -1,0 +1,164 @@
+{
+    "TileDataList": [
+        {
+            "ItemType": 1,
+            "ItemAmount": 6,
+            "Coordinate": {
+                "x": 1,
+                "y": 0
+            }
+        },
+        {
+            "ItemType": 2,
+            "ItemAmount": 8,
+            "Coordinate": {
+                "x": 2,
+                "y": 0
+            }
+        },
+        {
+            "ItemType": 5,
+            "ItemAmount": 9,
+            "Coordinate": {
+                "x": 3,
+                "y": 0
+            }
+        },
+        {
+            "ItemType": 1,
+            "ItemAmount": 21,
+            "Coordinate": {
+                "x": 4,
+                "y": 0
+            }
+        },
+        {
+            "ItemType": 0,
+            "ItemAmount": 0,
+            "Coordinate": {
+                "x": 5,
+                "y": 0
+            }
+        },
+        {
+            "ItemType": 4,
+            "ItemAmount": 0,
+            "Coordinate": {
+                "x": 6,
+                "y": 0
+            }
+        },
+        {
+            "ItemType": 5,
+            "ItemAmount": 0,
+            "Coordinate": {
+                "x": 7,
+                "y": 0
+            }
+        },
+        {
+            "ItemType": 4,
+            "ItemAmount": 0,
+            "Coordinate": {
+                "x": 8,
+                "y": 0
+            }
+        },
+        {
+            "ItemType": 3,
+            "ItemAmount": 16,
+            "Coordinate": {
+                "x": 9,
+                "y": 0
+            }
+        },
+        {
+            "ItemType": 5,
+            "ItemAmount": 0,
+            "Coordinate": {
+                "x": 10,
+                "y": 0
+            }
+        },
+        {
+            "ItemType": 1,
+            "ItemAmount": 15,
+            "Coordinate": {
+                "x": 11,
+                "y": 0
+            }
+        },
+        {
+            "ItemType": 3,
+            "ItemAmount": 20,
+            "Coordinate": {
+                "x": 12,
+                "y": 0
+            }
+        },
+        {
+            "ItemType": 2,
+            "ItemAmount": 30,
+            "Coordinate": {
+                "x": 13,
+                "y": 0
+            }
+        },
+        {
+            "ItemType": 1,
+            "ItemAmount": 30,
+            "Coordinate": {
+                "x": 14,
+                "y": 0
+            }
+        },
+        {
+            "ItemType": 4,
+            "ItemAmount": 30,
+            "Coordinate": {
+                "x": 15,
+                "y": 0
+            }
+        },
+        {
+            "ItemType": 5,
+            "ItemAmount": 30,
+            "Coordinate": {
+                "x": 16,
+                "y": 0
+            }
+        },
+        {
+            "ItemType": 5,
+            "ItemAmount": 30,
+            "Coordinate": {
+                "x": 17,
+                "y": 0
+            }
+        },
+        {
+            "ItemType": 4,
+            "ItemAmount": 30,
+            "Coordinate": {
+                "x": 18,
+                "y": 0
+            }
+        },
+        {
+            "ItemType": 5,
+            "ItemAmount": 30,
+            "Coordinate": {
+                "x": 19,
+                "y": 0
+            }
+        },
+        {
+            "ItemType": 2,
+            "ItemAmount": 30,
+            "Coordinate": {
+                "x": 20,
+                "y": 0
+            }
+        }
+    ]
+}

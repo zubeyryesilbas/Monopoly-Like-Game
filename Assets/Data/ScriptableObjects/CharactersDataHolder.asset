@@ -29,8 +29,8 @@ MonoBehaviour:
       type: 3}
     CharacterName: Gecko
     CharacterStat:
-      Luck: 0
-      Bonus: 0
+      Luck: 20
+      Bonus: 80
   - CharcterType: 7
     CharacterSelectionPrefab: {fileID: 1602295641930061128, guid: 7a148d95e55c34f88b76946fe5e984b8,
       type: 3}
@@ -38,8 +38,8 @@ MonoBehaviour:
       type: 3}
     CharacterName: Muskrat
     CharacterStat:
-      Luck: 0
-      Bonus: 0
+      Luck: 50
+      Bonus: 35
   - CharcterType: 3
     CharacterSelectionPrefab: {fileID: 1193115157527816523, guid: 883208dfa04c74c51991d9a31ec95a52,
       type: 3}
@@ -47,8 +47,8 @@ MonoBehaviour:
       type: 3}
     CharacterName: Pudu
     CharacterStat:
-      Luck: 0
-      Bonus: 0
+      Luck: 90
+      Bonus: 10
   - CharcterType: 4
     CharacterSelectionPrefab: {fileID: 5173566133899942677, guid: a7d956574f60b4832a844b4ef6e6971e,
       type: 3}
@@ -56,8 +56,8 @@ MonoBehaviour:
       type: 3}
     CharacterName: Sparrow
     CharacterStat:
-      Luck: 0
-      Bonus: 0
+      Luck: 60
+      Bonus: 50
   - CharcterType: 6
     CharacterSelectionPrefab: {fileID: 4509249141865874699, guid: 5e5e2e71ef0694f7aa215610a204bf47,
       type: 3}
@@ -65,5 +65,5 @@ MonoBehaviour:
       type: 3}
     CharacterName: Taipan
     CharacterStat:
-      Luck: 0
-      Bonus: 0
+      Luck: 60
+      Bonus: 45

@@ -5,6 +5,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2335755839585631231, guid: 84b7c8441f160174fa5c6f94cf397f0a,
@@ -15,17 +16,17 @@ PrefabInstance:
     - target: {fileID: 2335755839585631231, guid: 84b7c8441f160174fa5c6f94cf397f0a,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 5
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 2335755839585631231, guid: 84b7c8441f160174fa5c6f94cf397f0a,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 5
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 2335755839585631231, guid: 84b7c8441f160174fa5c6f94cf397f0a,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 5
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 2335755839585631231, guid: 84b7c8441f160174fa5c6f94cf397f0a,
         type: 3}
@@ -85,7 +86,7 @@ PrefabInstance:
     - target: {fileID: 6182162820492919152, guid: 84b7c8441f160174fa5c6f94cf397f0a,
         type: 3}
       propertyPath: m_Name
-      value: Colobus Variant
+      value: ColobusMovement Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8317233869622344689, guid: 84b7c8441f160174fa5c6f94cf397f0a,
         type: 3}
@@ -93,6 +94,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9100000, guid: eee1d477f17814437a8bcc3704b2d85d, type: 2}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6182162820492919152, guid: 84b7c8441f160174fa5c6f94cf397f0a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1917536123}
   m_SourcePrefab: {fileID: 100100000, guid: 84b7c8441f160174fa5c6f94cf397f0a, type: 3}
 --- !u!95 &5601238600833651726 stripped
 Animator:

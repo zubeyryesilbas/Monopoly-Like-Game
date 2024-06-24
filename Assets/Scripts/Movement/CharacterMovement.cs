@@ -9,32 +9,27 @@ public class CharacterMovement : MonoBehaviour,IMovement
     public Action OnStart;
     [SerializeField] private TweenParameters _tweenParameters;
     [SerializeField] private Animator _animator;
+    private TweenManager _tweenManager;
 
     private void Awake()
     {
         _tweenManager = TweenManager.Instance;
     }
 
-    public void Move(Vector3 targetPosition)
+    public void Move(Vector3 targetPosition ,int stepCount)
     {
-        _animator.SetTrigger("Roll");
-        TweenMove(targetPosition);
-    }
-
-    private void TriggerMove()
-    {
-        GetComponent<Animator>().SetTrigger("jump");
+        _animator.SetBool("Roll " , true);
+        TweenMove(targetPosition , stepCount);
     }
     
-    private TweenManager _tweenManager;
-
-    void TweenMove(Vector3 pos)
+    void TweenMove(Vector3 pos , int stepCount)
     {
         Vector3 startPos = transform.position;
         var endPos = pos + startPos;
         endPos = endPos / 2;
         endPos += Vector3.up * _tweenParameters.JumpFactor;
-        float duration = _tweenParameters.Duration;
+        float duration = _tweenParameters.Duration * stepCount;
+        
         OnStart?.Invoke();
         _tweenManager.AddTween(new Vector3Tween(
             startPos,
@@ -47,13 +42,13 @@ public class CharacterMovement : MonoBehaviour,IMovement
             },
             () =>
             {
-                _tweenManager.AddTween(new Vector3Tween(transform.position , pos , duration ,Easing.EaseInQuad ,
+                _tweenManager.AddTween(new Vector3Tween(transform.position , pos , duration ,Easing.Linear ,
                     (Vector3 value) =>
                     {
                         transform.position = value;
                     },
                     () =>
-                    {
+                    {   _animator.SetBool("Roll ",false);
                         OnComplete?.Invoke();
                     }));
             }

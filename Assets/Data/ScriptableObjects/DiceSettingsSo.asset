@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 646e7aacb503a435eaead4ad376da070, type: 3}
   m_Name: DiceSettingsSo
   m_EditorClassIdentifier: 
-  MaxRollForce: 1142
-  MaxTorque: 200
+  MaxRollForce: 6000
+  MaxTorque: 2000

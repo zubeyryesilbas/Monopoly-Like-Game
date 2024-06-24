@@ -11,14 +11,19 @@ namespace Dice
     {
         [SerializeField] private Rigidbody _rigidbody;
         [SerializeField] private DiceParamaterHoldersSO _diceParamaterHolder;
-        [SerializeField] private Transform _target;
+        private Transform _target;
+       
         private void OnMouseDown()
         {
             Roll();
         }
-        
+        public void SetTarget(Transform target)
+        {
+            _target = target;
+        }
         public async override void Roll()
         {
+            _rigidbody.isKinematic = false;
             _isRolling = true;
             _rigidbody.velocity = Vector3.zero;
             _rigidbody.angularVelocity = Vector3.zero;
@@ -47,6 +52,7 @@ namespace Dice
             
             _isRolling = false;
             OnRollingEnd?.Invoke();
+            _rigidbody.isKinematic = true;
         }
         public override int GetTopFace()
         { 
