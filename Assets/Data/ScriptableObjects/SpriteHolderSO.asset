@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dc8813a0853b417b9f12203a8fc7e66, type: 3}
+  m_Name: SpriteHolderSO
+  m_EditorClassIdentifier: 
+  Sprites:
+  - ItemType: 0
+    SpriteGui: {fileID: 21300000, guid: b0f1e274f9fbb4ac09fa287360aa1878, type: 3}
+    SpriteTile: {fileID: 21300000, guid: b0f1e274f9fbb4ac09fa287360aa1878, type: 3}
+  - ItemType: 1
+    SpriteGui: {fileID: 21300000, guid: b0f1e274f9fbb4ac09fa287360aa1878, type: 3}
+    SpriteTile: {fileID: 21300000, guid: b0f1e274f9fbb4ac09fa287360aa1878, type: 3}
+  - ItemType: 3
+    SpriteGui: {fileID: 21300000, guid: a9e1bd271fbaf485bb16f9ed29f4019a, type: 3}
+    SpriteTile: {fileID: 21300000, guid: a9e1bd271fbaf485bb16f9ed29f4019a, type: 3}
+  - ItemType: 2
+    SpriteGui: {fileID: 21300000, guid: 96357904f45304c9b96eb4500786e659, type: 3}
+    SpriteTile: {fileID: 21300000, guid: 96357904f45304c9b96eb4500786e659, type: 3}

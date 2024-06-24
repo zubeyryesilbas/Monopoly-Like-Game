@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9bf019499983467f98ca490e5a73cb0, type: 3}
+  m_Name: CharactersDataHolder
+  m_EditorClassIdentifier: 
+  CharacterData:
+  - CharcterType: 0
+    CharacterSelectionPrefab: {fileID: 6851610284631719244, guid: fb407ae788e534ae58b28d10c82f69a8,
+      type: 3}
+    CharacterMovementPrefab: {fileID: 7718092941395308175, guid: 5f9c408ebbfcc4871868323ac2aeaaef,
+      type: 3}
+    CharacterName: Colobus
+    CharacterStat:
+      Luck: 40
+      Bonus: 50
+  - CharcterType: 1
+    CharacterSelectionPrefab: {fileID: 530713077407178889, guid: 4bba33751212f4471b6b1851f0c68f03,
+      type: 3}
+    CharacterMovementPrefab: {fileID: 5563216079589802170, guid: e6ede410106bb41e99cfafaae403a1a6,
+      type: 3}
+    CharacterName: Gecko
+    CharacterStat:
+      Luck: 0
+      Bonus: 0
+  - CharcterType: 7
+    CharacterSelectionPrefab: {fileID: 1602295641930061128, guid: 7a148d95e55c34f88b76946fe5e984b8,
+      type: 3}
+    CharacterMovementPrefab: {fileID: 4950258624356096078, guid: 53a47f3780f8c4bd08162bc559adaf25,
+      type: 3}
+    CharacterName: Muskrat
+    CharacterStat:
+      Luck: 0
+      Bonus: 0
+  - CharcterType: 3
+    CharacterSelectionPrefab: {fileID: 1193115157527816523, guid: 883208dfa04c74c51991d9a31ec95a52,
+      type: 3}
+    CharacterMovementPrefab: {fileID: 8323652488040898611, guid: 4878df96166cc474fa39048fbf9bdecc,
+      type: 3}
+    CharacterName: Pudu
+    CharacterStat:
+      Luck: 0
+      Bonus: 0
+  - CharcterType: 4
+    CharacterSelectionPrefab: {fileID: 5173566133899942677, guid: a7d956574f60b4832a844b4ef6e6971e,
+      type: 3}
+    CharacterMovementPrefab: {fileID: 6045338527545494521, guid: 81c1c46fe5a7946a88379d0afb940fc8,
+      type: 3}
+    CharacterName: Sparrow
+    CharacterStat:
+      Luck: 0
+      Bonus: 0
+  - CharcterType: 6
+    CharacterSelectionPrefab: {fileID: 4509249141865874699, guid: 5e5e2e71ef0694f7aa215610a204bf47,
+      type: 3}
+    CharacterMovementPrefab: {fileID: 1986198512818175225, guid: d5004b5495ee24d68b5ea4e69a59bbb9,
+      type: 3}
+    CharacterName: Taipan
+    CharacterStat:
+      Luck: 0
+      Bonus: 0
