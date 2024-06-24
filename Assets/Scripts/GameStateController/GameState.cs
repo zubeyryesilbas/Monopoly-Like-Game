@@ -5,5 +5,4 @@ using UnityEngine;
 public class GameState
 {
    public CharacterType SelectedCharacterType;
-   public ItemStorage ItemStorage;
 }

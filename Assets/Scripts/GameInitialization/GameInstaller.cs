@@ -14,15 +14,18 @@ public class GameInstaller : MonoBehaviour
     private GameController _gameController;
     [SerializeField] private CharacterSelection _characterSelection;
     [SerializeField] private SpriteTypeHolderSO _itemSpriteHolder;
-    [SerializeField] private ItemPresenter _itemPresenter;
     [SerializeField] private BoardController _boardController;
+    private EventManager _eventManager;
     [SerializeField] private CasePresenter _casePresenter;
     [SerializeField] private FeedBackFactory _feedBackFactory;
     [SerializeField] private StatItemsPresenter _statItemsPresenter;
     [SerializeField] private CharactersDataHolder _charactersDataHolder;
     private FeedBackListener _feedBackListener;
+    [SerializeField] private InventorySystem _inventorySystem;
+    [SerializeField] private CaseSystem _caseSystem;
     private void Start()
     {
+        _eventManager = EventManager.Instance;
         _guiAnimatonManager = GuiAnimationManager.Instance;
         _gameController = new GameController(_cameraController , _guiAnimatonManager , _characterSelection , _boardController  );
         _gameStateSaver = new PlayerPrefsGameStateSaver();
@@ -32,9 +35,9 @@ public class GameInstaller : MonoBehaviour
         _boardController.Initialize(_itemSpriteHolder);
         _gameStateManager.Initialize(_characterManager , _itemManager , _gameStateSaver);
         _characterSelection.Initialize(_characterManager, _guiAnimatonManager, _gameController ,_charactersDataHolder ,_statItemsPresenter );
-        _itemPresenter.Initialize(_itemManager , _itemSpriteHolder , _boardController);
-        _casePresenter.Initialize(_itemManager , _itemSpriteHolder , _boardController , _itemPresenter, _characterManager);
-        _feedBackListener = new FeedBackListener(_boardController, _feedBackFactory ,_itemSpriteHolder , _characterManager);
+        _inventorySystem.Initialize(_itemManager , _itemSpriteHolder , _eventManager);
+        _caseSystem.Initialize(_boardController ,_itemSpriteHolder ,_itemManager ,_characterManager , _eventManager);
+        _feedBackListener = new FeedBackListener(_feedBackFactory ,_itemSpriteHolder , _characterManager , _eventManager);
     }
 }
 

@@ -19,8 +19,6 @@ public class BoardController : MonoBehaviour
    public List<TileData> Tiles => _tiles;
    private SpriteTypeHolderSO _spriteTypeHolderSo;
    private int _currentIndex;
-   public Action<TileData> OnLastStepCompleted;
-   
    public void Initialize(SpriteTypeHolderSO spriteTypeHolderSo )
    {
       _objectPooler = ObjectPooler.Instance;
@@ -90,7 +88,7 @@ public class BoardController : MonoBehaviour
          if (_lastStep)
          {
             Debug.Log("Last Step Completed " + _tiles[_currentIndex].ItemAmount);
-            OnLastStepCompleted?.Invoke(_tiles[_currentIndex]);
+            EventManager.Instance.TriggerEvent(EventConstants.BoardEvents.ONLASTSTEPCOMPLETED,_tiles[_currentIndex]);
          }
       };
    }

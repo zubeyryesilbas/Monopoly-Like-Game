@@ -7,19 +7,19 @@ using UnityEngine;
 
 public class FeedBackListener
 {
-   private BoardController _boardController;
    private FeedBackFactory _feedBackFactory;
    private SpriteTypeHolderSO _spriteTypeHolderSo;
    private Dictionary<ItemType, Sprite> _itemTypeSpriteDic = new FlexibleDictionary<ItemType, Sprite>();
    private int _bonus;
    private ICharacterManager _characterManager;
+   private EventManager _eventManager;
 
-   public FeedBackListener(BoardController boardController, FeedBackFactory feedBackFactory , SpriteTypeHolderSO spriteTypeHolderSo ,ICharacterManager characterManager)
+   public FeedBackListener( FeedBackFactory feedBackFactory , SpriteTypeHolderSO spriteTypeHolderSo ,ICharacterManager characterManager , EventManager eventManager)
    {
       _characterManager = characterManager;
-      _boardController = boardController;
       _feedBackFactory = feedBackFactory;
       _spriteTypeHolderSo = spriteTypeHolderSo;
+      _eventManager = eventManager;
       foreach (var item in spriteTypeHolderSo.Sprites)
       {
          _itemTypeSpriteDic.Add(item.ItemType , item.SpriteGui);
@@ -28,8 +28,8 @@ public class FeedBackListener
    }
 
    private void StartListening()
-   {
-      _boardController.OnLastStepCompleted += OnLastStepCompleted;
+   {  
+      _eventManager.AddEventListener(EventConstants.BoardEvents.ONLASTSTEPCOMPLETED ,(data) => OnLastStepCompleted((TileData)data));
    }
 
    private void OnLastStepCompleted(TileData tileData)
