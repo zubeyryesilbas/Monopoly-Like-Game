@@ -1,4 +1,4 @@
-# Joker Games Case Description - Mustafa Zübeyr Yesilbas .
+# Monopoly Like Game.
 
 # Introduction
 I have developed this game using only assets found on the internet and the Unity Asset Store for the visuals. All the code, however, is entirely my creation. If you have any problems or questions, feel free to reach out to me.
