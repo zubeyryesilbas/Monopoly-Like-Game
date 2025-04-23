@@ -9,7 +9,9 @@ public class RunTimeAnimationDataRecorder : MonoBehaviour
     private Dictionary<Transform,List<Quaternion>> _rotationsDictionary = new Dictionary<Transform , List<Quaternion>>();
     private bool isRecording = false;
     private List<Transform> _transforms = new List<Transform>();
+    [SerializeField] private List<Transform> _customList = new List<Transform>();
     [SerializeField] private string _filePath;
+    [SerializeField] private RecordingType _recordingType;
     private bool _canRecord;
 
     private void Awake()
@@ -19,9 +21,14 @@ public class RunTimeAnimationDataRecorder : MonoBehaviour
 
     public void StartRecord()
     {
-        _canRecord = true;
+      
         isRecording = true;
         _transforms = new List<Transform>();
+        switch (_recordingType)
+        {
+            case RecordingType.CustomList:
+                break;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        }
         foreach (Transform t in transform)
         {   
             if(t == transform) continue;
@@ -38,7 +45,6 @@ public class RunTimeAnimationDataRecorder : MonoBehaviour
         {
             foreach (Transform t in _transforms)
             {
-              
                 _positonsDictionary[t].Add(t.localPosition);
                 _rotationsDictionary[t].Add(t.localRotation);
             }
@@ -79,5 +85,15 @@ public class RunTimeAnimationDataRecorder : MonoBehaviour
             Debug.Log("Data written to " + filePath);
         
     }
+    
+}
+
+public enum RecordingType
+{
+    GetAllChildTransforms,     // Record all children, regardless of type
+    OnlyRigidBodies,           // Record only GameObjects with Rigidbody
+    TaggedObjects,             // Record objects with specific tag(s)
+    LayerFiltered,             // Record objects on specific layers
+    CustomList,                // Allow manual assignment of objects to record
 }
 
