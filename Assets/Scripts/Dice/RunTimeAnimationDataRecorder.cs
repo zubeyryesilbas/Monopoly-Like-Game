@@ -27,7 +27,7 @@ public class RunTimeAnimationDataRecorder : MonoBehaviour
         switch (_recordingType)
         {
             case RecordingType.CustomList:
-                break;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                break;
         }
         foreach (Transform t in transform)
         {   
